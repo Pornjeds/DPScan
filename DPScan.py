@@ -45,9 +45,9 @@ def main():
 		for line in p.stdout:
 			line=line.split("modules")
 			if len(line)>1 :
-				Modules_List.append(line[1].split("/")[1])
+				Modules_List.append(line[1].split("/")[1].split("\\")[0])
 		#Retrieve Results
-		Modules_List=list(set(Modules_List))
+		Modules_List=sorted(list(set(Modules_List)))
 		for module in Modules_List:
 			print module
 
