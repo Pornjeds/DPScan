@@ -1,1 +1,6 @@
-This is a sample readme file.
+DRUPAL Modules Enumerator v0.2beta-- written by Ali Elouafiq 2012, edit by Antoine Cervoise"
+<ScriptName> [filename.txt]
+<ScriptName> [URL]
+<ScriptName> [URL] user password // FOR HTTP AUTHORIZATION
+
+This script looks for Drupal modules in HTML page (URL). 
