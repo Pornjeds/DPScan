@@ -7,7 +7,7 @@ __CMD__={
 	"wget":" wget -q -O - ",
 	"grep":" | grep modules",
 	"output_file":" cat ",
-	"help": "DRUPAL Modules Enumerator v0.1beta-- written by Ali Elouafiq 2012"
+	"help": "DRUPAL Modules Enumerator v0.2beta-- written by Ali Elouafiq 2012, edit by Antoine Cervoise"
 		"\n<ScriptName> [filename.txt]"
 		"\n<ScriptName> [URL]"
 		"\n<ScriptName> [URL] user password // FOR HTTP AUTHORIZATION"
