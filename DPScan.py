@@ -7,7 +7,7 @@ __CMD__={
 	"wget":" wget -q -O - ",
 	"grep":" | grep modules",
 	"output_file":" cat ",
-	"help": "DRUPAL Modules Enumerator v0.2beta-- written by Ali Elouafiq 2012, edit by Antoine Cervoise"
+	"help": "DRUPAL Modules Enumerator v0.3beta-- written by Ali Elouafiq 2012, edit by Antoine Cervoise"
 		"\n<ScriptName> [filename.txt]"
 		"\n<ScriptName> [URL]"
 		"\n<ScriptName> [URL] user password // FOR HTTP AUTHORIZATION"
@@ -45,7 +45,8 @@ def main():
 		for line in p.stdout:
 			line=line.split("modules")
 			if len(line)>1 :
-				Modules_List.append(line[1].split("/")[1].split("\\")[0])
+				if line[0][-1] == '/' or line[0][-1:] == '\\\\':
+					Modules_List.append(line[1].split("/")[1].split("\\")[0])
 		#Retrieve Results
 		Modules_List=sorted(list(set(Modules_List)))
 		for module in Modules_List:
